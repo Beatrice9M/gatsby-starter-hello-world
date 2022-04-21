@@ -8,7 +8,7 @@ export default function Home() {
         <input type="text" placeholder="enter name" name="name"></input>
         <input type="text" placeholder="enter email" name="email"></input>
         <textarea placeholder="enter message" name="message"></textarea>
-        <button type="submit"></button>
+        <button type="submit">Submit Form</button>
       </form>
     </div>
   )
