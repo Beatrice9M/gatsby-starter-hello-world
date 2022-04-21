@@ -11,6 +11,7 @@ export default function Home() {
         method="post"
         data-netlify="true"
         style={{ textAlign: "center" }}
+        action="/success/"
       >
         <input type="hidden" name="contactForm" value="contactForm"></input>
         <input type="text" placeholder="enter name" name="name"></input>
