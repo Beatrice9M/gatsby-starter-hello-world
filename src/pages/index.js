@@ -16,10 +16,12 @@ export default function Home() {
         <input type="hidden" name="contactForm" value="contactForm"></input>
         <input type="text" placeholder="enter name" name="name"></input>
         <input type="text" placeholder="enter email" name="email"></input>
-        <option value="Marketing">Marketing</option>
-        <option value="Sales">Sales</option>
-        <option value="Operations">Operations</option>
-        <option value="Recruting">Recruting</option>
+        <select>
+          <option value="Marketing">Marketing</option>
+          <option value="Sales">Sales</option>
+          <option value="Operations">Operations</option>
+          <option value="Recruting">Recruting</option>
+        </select>
         <textarea placeholder="enter message" name="message"></textarea>
         <button type="submit" style={{ color: "blue", textAlign: "center" }}>
           Submit Form
@@ -31,7 +33,7 @@ export default function Home() {
         name="contactSales"
         method="post"
         data-netlify="true"
-        style={{ textAlign: "center" }}
+        style={{ display: "none" }}
         action="/success/"
       >
         <input type="hidden" name="contactForm" value="contactForm"></input>
