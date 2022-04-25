@@ -15,7 +15,7 @@ export default function Home() {
     console.log("name", name)
     // The [name="form-name] field in the DOM.
     const formName = document.querySelector(
-      '#conditional-form [name="form-name"]'
+      '#conditional-form [name="Contact-Marketing"]'
     )
     // Apply the new name to the [name="form-name"] field within the form.
     if (formName) {
