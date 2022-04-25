@@ -23,55 +23,33 @@ export default function Home() {
     }
   }
   return (
-    <div className="contactForm">
-      <p className="heading" style={{ color: "blue", textAlign: "center" }}>
-        My Contact Form
-      </p>
+    <>
       <form
-        id="conditional-form"
         name="Contact-Marketing"
         method="POST"
         data-netlify="true"
-        style={{ textAlign: "center" }}
-        action="/success/"
+        id="conditional-form"
       >
-        <input type="text" placeholder="enter name" name="name"></input>
-        <input type="text" placeholder="enter email" name="email"></input>
-        <input
-          type="text"
-          placeholder="enter something"
-          name="something"
-        ></input>
-        <select name="subject" required onchange="changeFormName(event)">
+        <select name="subject" required>
           <option value="Marketing">Marketing</option>
           <option value="Sales">Sales</option>
-          <option value="Operations">Operations</option>
-          <option value="Recruting">Recruting</option>
         </select>
-        <textarea placeholder="enter message" name="message"></textarea>
-        <button type="submit" style={{ color: "blue", textAlign: "center" }}>
-          Submit Form
-        </button>
+        <input type="email" name="email" required />
+        <input type="text" name="name" required />
+        <textarea name="message" required></textarea>
+        <button type="submit">Send</button>
       </form>
-
-      <form
-        id="conditional-form"
-        className="hidden"
+      <formform
         name="Contact-Sales"
         method="POST"
         data-netlify="true"
-        style={{ display: "none" }}
-        action="/success/"
+        class="hidden"
       >
-        <input type="text" placeholder="enter name" name="name"></input>
-        <input type="text" placeholder="enter email" name="email"></input>
-        <input
-          type="text"
-          placeholder="enter something"
-          name="something"
-        ></input>
-        <textarea placeholder="enter message" name="message"></textarea>
-      </form>
-    </div>
+        <select name="subject"></select>
+        <input type="email" name="email" />
+        <input type="text" name="name" />
+        <textarea name="message"></textarea>
+      </formform>
+    </>
   )
 }
