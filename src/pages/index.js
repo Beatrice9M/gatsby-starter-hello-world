@@ -32,6 +32,11 @@ export default function Home() {
       >
         <input type="text" placeholder="enter name" name="name"></input>
         <input type="text" placeholder="enter email" name="email"></input>
+        <input
+          type="text"
+          placeholder="enter something else"
+          name="something"
+        ></input>
         <select name="subject" required onchange="changeFormName(event)">
           <option value="Marketing">Marketing</option>
           <option value="Sales">Sales</option>
@@ -55,10 +60,12 @@ export default function Home() {
       >
         <input type="text" placeholder="enter name" name="name"></input>
         <input type="text" placeholder="enter email" name="email"></input>
+        <input
+          type="text"
+          placeholder="enter something else"
+          name="something"
+        ></input>
         <textarea placeholder="enter message" name="message"></textarea>
-        <button type="submit" style={{ color: "blue", textAlign: "center" }}>
-          Submit Form
-        </button>
       </form>
     </div>
   )
