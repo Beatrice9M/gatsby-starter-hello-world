@@ -59,7 +59,7 @@ export default function Home() {
         name="Contact-Sales"
         method="POST"
         data-netlify="true"
-        //  style={{ display: "none" }}
+        style={{ display: "none" }}
         action="/success/"
       >
         <input type="text" placeholder="enter name" name="name"></input>
