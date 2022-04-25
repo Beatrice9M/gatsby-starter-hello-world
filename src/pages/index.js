@@ -30,7 +30,6 @@ export default function Home() {
         style={{ textAlign: "center" }}
         action="/success/"
       >
-        <input type="hidden" name="contactForm" value="contactForm"></input>
         <input type="text" placeholder="enter name" name="name"></input>
         <input type="text" placeholder="enter email" name="email"></input>
         <select name="subject" required onchange="changeFormName(event)">
@@ -54,7 +53,6 @@ export default function Home() {
         style={{ display: "none" }}
         action="/success/"
       >
-        <input type="hidden" name="contactForm" value="contactForm"></input>
         <input type="text" placeholder="enter name" name="name"></input>
         <input type="text" placeholder="enter email" name="email"></input>
         <textarea placeholder="enter message" name="message"></textarea>
