@@ -12,6 +12,7 @@ export default function Home() {
     if (form) {
       form.setAttribute("name", name)
     }
+    console.log("name", name)
     // The [name="form-name] field in the DOM.
     const formName = document.querySelector(
       '#conditional-form [name="form-name"]'
