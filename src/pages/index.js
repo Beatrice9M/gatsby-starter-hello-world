@@ -24,7 +24,7 @@ export default function Home() {
       </p>
       <form
         id="conditional-form"
-        name="contactMarketing"
+        name="Contact-Marketing"
         method="post"
         data-netlify="true"
         style={{ textAlign: "center" }}
@@ -48,7 +48,7 @@ export default function Home() {
       <form
         id="conditional-form"
         className="hidden"
-        name="contactSales"
+        name="Contact-Sales"
         method="post"
         data-netlify="true"
         style={{ display: "none" }}
