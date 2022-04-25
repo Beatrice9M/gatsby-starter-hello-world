@@ -3,19 +3,23 @@ import React from "react"
 export default function Home() {
   function changeFormName(event) {
     // The value of the subject field.
-    var value = event.target.value
+    const value = event.target.value
     // The name we want to apply to the form, based on the value.
-    var name = "Contact-" + value
+    const name = "Contact-" + value
     // The form element in the DOM.
-    var form = document.querySelector("#conditional-form")
+    const form = document.querySelector("#conditional-form")
     // Apply the new name to the form's [name] attribute.
-    if (form) form.setAttribute("name", name)
+    if (form) {
+      form.setAttribute("name", name)
+    }
     // The [name="form-name] field in the DOM.
-    var formName = document.querySelector(
+    const formName = document.querySelector(
       '#conditional-form [name="form-name"]'
     )
     // Apply the new name to the [name="form-name"] field within the form.
-    if (formName) formName.setAttribute("value", name)
+    if (formName) {
+      formName.setAttribute("value", name)
+    }
   }
   return (
     <div className="contactForm">
@@ -34,7 +38,7 @@ export default function Home() {
         <input type="text" placeholder="enter email" name="email"></input>
         <input
           type="text"
-          placeholder="enter something else"
+          placeholder="enter something"
           name="something"
         ></input>
         <select name="subject" required onchange="changeFormName(event)">
@@ -55,14 +59,14 @@ export default function Home() {
         name="Contact-Sales"
         method="POST"
         data-netlify="true"
-        style={{ display: "none" }}
+        //  style={{ display: "none" }}
         action="/success/"
       >
         <input type="text" placeholder="enter name" name="name"></input>
         <input type="text" placeholder="enter email" name="email"></input>
         <input
           type="text"
-          placeholder="enter something else"
+          placeholder="enter something"
           name="something"
         ></input>
         <textarea placeholder="enter message" name="message"></textarea>
