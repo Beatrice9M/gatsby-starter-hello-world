@@ -27,6 +27,7 @@ export default function Home() {
         style={{ textAlign: "center" }}
         action="/success/"
       >
+        <input type="hidden" name="form-name" value={formName}></input>
         <input type="text" placeholder="enter name" name="name"></input>
         <input type="text" placeholder="enter email" name="email"></input>
         <select name="subject" required onChange={ev => changeFormName(ev)}>
