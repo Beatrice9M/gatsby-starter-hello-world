@@ -25,7 +25,7 @@ export default function Home() {
       <form
         id="conditional-form"
         name="Contact-Marketing"
-        method="post"
+        method="POST"
         data-netlify="true"
         style={{ textAlign: "center" }}
         action="/success/"
@@ -48,7 +48,7 @@ export default function Home() {
         id="conditional-form"
         className="hidden"
         name="Contact-Sales"
-        method="post"
+        method="POST"
         data-netlify="true"
         style={{ display: "none" }}
         action="/success/"
